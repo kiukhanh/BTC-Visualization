@@ -1,0 +1,341 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #222;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+a {
+  color: #7447ae;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+section {
+  width: 100%;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+.purple {
+  color: #7447ae;
+}
+.pink {
+  color: #ff2a75;
+}
+.blue {
+  color: #37a7ff;
+}
+
+/* world Section */
+header.world {
+  background: url(../assets/images/world.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #222;
+  color: #3C6478;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header.world .world-text {
+  text-align: right;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+header.world h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+header.world h1 span {
+  font-weight: 300;
+}
+
+
+/* World development indicators */
+.dashboard .col-md-12 {
+  transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
+  padding: 5em 3em;
+  background-color: #fff;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+}
+h4.sub-heading {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4e4c58;
+}
+h1.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #4e4c58;
+  font-size: 3em;
+  position: relative;
+  padding-bottom: 10px;
+}
+h1.heading span {
+  font-weight: 600;
+}
+h1.heading:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 100px;
+}
+h1.heading.purple:after {
+  background-color: #7447ae;
+}
+h1.heading.pink:after {
+  background-color: #ff2a75;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+}
+
+/* indicator */
+.indicator-box {
+  padding: 2em;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+  min-height: 400px;
+}
+.indicator-box h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.indicator-box p.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.indicator-box p.designation {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+.indicator-box.yellow {
+  background-color: #ffbe61;
+}
+.indicator-box.purple {
+  background-color: #7b32d5;
+}
+.indicator-box.blue {
+  background-color: #37a7ff;
+}
+.indicator-box.pink {
+  background-color: #ff2a75;
+}
+
+/* Detail */
+.detail {
+  background: url(../assets/images/vietnam.svg) #B2DDEF center center no-repeat fixed;
+  background-size: auto 100vh;
+  padding: 3em;
+}
+.detail h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.detail div h1 {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: green; /* F7E7BD */
+}
+
+.detail div p {
+  max-height: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #222;
+}
+/* Footer */
+.footer {
+  background-color: #37324b;
+  padding: 5em;
+}
+.footer h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  color: #a3a1ac;
+  margin-bottom: 2em;
+}
+.footer h1 span {
+  color: #fff;
+  font-weight: 300;
+}
+.footer h1:after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #37a7ff;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-40px, 10px);
+}
+
+/* Let's optimise it for mobile devices */
+
+@media (max-width: 720px){
+  h1.heading {
+    font-size: 2em;
+  }
+  header.world {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  header.world h1 {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .indicator {
+    padding-top: 3rem;
+  }
+  .dashboard .col-md-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dashboard .col-md-12 {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+  .detail {
+    padding: 2em;
+  }
+  .detail h1 {
+    font-size: 2em;
+  }
+  .footer {
+    padding: 1em 0em;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .detail,
+  .detail .container-fluid,
+  .detail .col-lg-8,
+  .detail .col-lg-4,
+  .detail .indicator-box
+  {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2em;
+  }
+}
+
+
+
+/* dashboard */
+/* center dashboard */
+#world-gdp {
+  position: relative;
+}
+#world-gdp::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+
+/* detail elements */
+#gdp-vietnam-overview {
+  position: relative;
+}
+#gdp-vietnam-overview::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+#indexes {
+  position: relative;
+}
+#indexes::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+#population-statistic {
+  position: relative;
+}
+#population-statistic::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+#labor-force {
+  position: relative;
+}
+#labor-force::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
+
+#regression {
+  width: 100%;
+}
+
+#three-growthest-year {
+  position: relative;
+}
+#three-growthest-year::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 27px;
+  background: white;
+  display: block;
+  bottom: 0em;
+}
